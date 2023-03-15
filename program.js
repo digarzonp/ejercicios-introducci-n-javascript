@@ -81,3 +81,24 @@ function media(){
 
 }
 
+//7) Dos vehiculos viajan a diferentes velocidades (v1,v2) y estan distanciados por una distancia d, 
+//el que esta detras viada a una     velocidad mayor
+//algoritmo donde se ingresa la distancia , velocidad de los vehiculos y 
+//determinar el tiempo en minutos en que alcanzara el vehiculo
+
+function calcular_tiempo(){
+
+    let v1= parseInt(documento.getElementById("x").value);
+    let v2= parseInt(documento.getElementById("y").value);
+    let d= parseInt(documento.getElementById("x").value);
+
+    let t=d/(v1-v2);
+    let tf=t*60
+    
+    let resultado=document.getElementById("resultado");
+    resultado.value=tf;
+
+    return tf;
+
+}
+
